@@ -1,0 +1,229 @@
+Abstract
+With the rapid proliferation of IoT devices and the increasing demand for real-time data processing, traditional centralized cloud computing models are struggling to meet the stringent Quality of Service (QoS) requirements, such as low latency, high bandwidth, and minimal jitter. Edge Computing (EC) emerges as a transformative solution by shifting computing power and intelligence closer to the end-users, thereby reducing network congestion and enhancing application performance. This seminar will provide a comprehensive overview of Edge Computing, including its foundational concepts, evolution from Cloudlets to Multi-Access Edge Computing, and key components such as resource management and computation offloading. We will also explore enabling technologies like Edge Intelligence and 5G, alongside various use cases in smart cities, e-Health, and military applications. Finally, we will address future considerations regarding standardization and green energy integration.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Introduction
+Edge Computing (EC) is an innovative computing paradigm that addresses the challenges posed by the growing number of connected devices and the demand for low-latency, high-bandwidth applications. As industries increasingly rely on real-time data processing, traditional cloud computing models become inadequate, leading to network congestion and inefficiencies. By processing and caching data at the network's edge, EC significantly reduces latency and improves performance for applications such as autonomous vehicles, smart cities, and e-Health.
+The evolution of Edge Computing has been shaped by earlier technologies like Content Delivery Networks (CDNs) and Cloudlets, which aimed to enhance data delivery and reduce latency. Today, EC integrates various architectures, including Multi-Access Edge Computing (MEC), and employs enabling technologies such as Edge Intelligence and 5G connectivity.
+This seminar will delve into the essential aspects of Edge Computing, exploring its architecture, key technologies, and diverse use cases. We will also discuss the future of EC, focusing on the need for standardization and the integration of sustainable energy solutions. By understanding Edge Computing, we can better appreciate its potential to transform how data is processed and utilized across various sectors.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WHERE IS THE EDGE LOCATED?
+As a term, the word ‘‘Edge’’ signifies the extreme part of any
+given network. In the case of a telecommunications network,
+it refers to the RAN (Radio Access networks) part. While in
+the case of the data network (the Internet), the Edge or, more
+precisely, the Edge Device (ED) is any extreme end-users or
+IoT device (mobile phones, cars, smartwatches, etc.) [6].
+However, In EC, the devices responsible for executing
+computation tasks are referred to as Edge Servers (ESs) or
+Edge nodes (ENs). Those computing devices can exist in
+one hope or a few more from the edge devices. Nonetheless,
+processing data at the Edge means typically handling it before
+it crosses any WAN (Wide Area Networks), knowing that
+passing through any WAN denotes a significant data transfer
+delay. Supplementary, the nature of an Edge Server varies
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Edge Intelligence: Empowering Intelligence to the Edge of Network
+Authors: D. Xu, T. Li, Y. Li, X. Su, S. Tarkoma, T. Jiang, J. Crowcroft, P. Hui
+Summary: This paper discusses the concept of Edge Intelligence, which integrates artificial intelligence (AI) capabilities at the edge of the network. It highlights how empowering edge devices with intelligence can enhance data processing efficiency, reduce latency, and improve decision-making in real-time applications. The authors explore various architectures and frameworks that facilitate the deployment of intelligent edge solutions and examine the implications for network performance and resource management.
+
+2. Resource Scheduling in Edge Computing: A Survey
+Authors: Q. Luo, S. Hu, C. Li, G. Li, W. Shi
+Summary: This survey provides a comprehensive overview of resource scheduling techniques in Edge Computing. It categorizes existing scheduling strategies and discusses their effectiveness in managing resources across diverse edge environments. The paper emphasizes the importance of efficient scheduling to meet the demands of latency-sensitive applications and outlines future research directions to enhance resource allocation and optimization in edge networks.
+
+3. Edge-Computing-Enabled Smart Cities: A Comprehensive Survey
+Authors: L. U. Khan, I. Yaqoob, N. H. Tran, S. M. A. Kazmi, T. N. Dang, C. S. Hong
+Summary: This paper surveys the role of Edge Computing in the development of smart cities. It examines how edge technologies can enhance urban services by enabling real-time data processing and analytics. The authors discuss various applications of EC in smart cities, including traffic management, environmental monitoring, and public safety. The paper also addresses challenges and opportunities in implementing edge solutions in urban environments.
+
+4. An Overview on Edge Computing Research
+Authors: K. Cao, Y. Liu, G. Meng, Q. Sun
+Summary: This overview highlights the current state of research in Edge Computing, covering its definitions, architectures, and key technologies. The authors provide insights into the evolution of EC and its applications across different domains. The paper also identifies significant challenges faced by the field, such as security, privacy, and interoperability, while suggesting potential research directions for future exploration.
+
+5. Edge-Computing Architectures for Internet of Things Applications: A Survey
+Authors: S. Hamdan, M. Ayyash, S. Almajali
+Summary: This survey focuses on various edge-computing architectures specifically designed for Internet of Things (IoT) applications. The authors analyze different architectural models and their suitability for IoT environments, discussing the trade-offs between performance, scalability, and resource management. The paper also reviews the latest advancements in edge computing technologies and their implications for IoT deployments.
+
+6. A Comprehensive Survey on Mobile Edge Computing: Challenges, Tools, Applications
+Authors: F. Vhora, J. Gandhi
+Summary: This paper provides an extensive survey of Mobile Edge Computing (MEC), examining its challenges, tools, and applications. The authors discuss the benefits of MEC in reducing latency and enhancing user experience in mobile networks. They also explore various use cases, including video streaming, augmented reality, and smart transportation, while addressing the technical challenges and solutions for effective MEC implementation. This literature survey summarizes each paper's key contributions and findings, providing a clear overview of the current research landscape in Edge Computing.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Edge Computing:
+- Proximity to End-Users: Edge Computing involves placing computing resources and data storage closer to the end-users, which minimizes the distance data must travel. This proximity is crucial for applications that require immediate processing and response, such as autonomous vehicles and real-time analytics.
+
+- Reduction of Latency: By processing and caching data at the edge of the network, Edge Computing significantly reduces latency. This is essential for applications that cannot tolerate delays, ensuring that users receive timely information and services.
+
+- Alleviation of Network Congestion: Edge Computing helps alleviate congestion in core networks by offloading data processing from centralized cloud servers. This reduction in traffic not only improves overall network performance but also enhances the user experience by providing faster access to data and services.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Why Edge Computing:
+- Enhanced Quality of Service (QoS): Edge Computing significantly improves QoS by reducing latency and increasing bandwidth. This is crucial for applications like autonomous vehicles and real-time analytics, where immediate data processing is essential for performance and safety.
+
+- Local Data Processing: By processing data closer to the source, Edge Computing alleviates congestion in core networks. This local processing not only conserves bandwidth but also ensures that sensitive data can be handled with greater privacy and security, addressing concerns about sending data to centralized cloud servers.
+
+- Support for IoT Growth: With the rapid increase in the number of IoT devices, Edge Computing provides a necessary framework to manage and analyze the vast amounts of data generated. By enabling more localized computing, EC helps maintain network efficiency and scalability, accommodating the demands of a connected world.
+
+EG: OIL PLATFORM / CAMERA
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1. Content Delivery Networks (CDNs)
+Content Delivery Networks (CDNs) are systems of distributed servers that deliver web content to users based on their geographic location. By caching content (such as images, videos, and scripts) on multiple edge servers, CDNs reduce latency and improve access speed for users. Originally developed to solve the "flash crowd" problem, CDNs enhance the performance and reliability of web services by ensuring that content is delivered quickly and efficiently.
+
+2. Cloudlets
+Cloudlets are small-scale data centers that provide cloud computing capabilities at the edge of the network. Proposed in 2009, they consist of a limited number of servers located closer to end-users, enabling low-latency connections and rapid response times. Cloudlets allow users to offload computation tasks and access cached content, bridging the gap between centralized cloud services and local processing needs.
+
+3. Fog Computing
+Fog Computing is a decentralized computing paradigm that extends cloud capabilities to the edge of the network. Introduced by Cisco in 2012, it facilitates continuous computing between IoT devices and the cloud by utilizing a network of interconnected devices known as fog nodes. These nodes can include switches, servers, and micro-data centers, allowing for efficient resource orchestration and management across different network levels.
+
+4. Mobile Edge Computing (MEC)
+Mobile Edge Computing (MEC) is a network architecture that brings computation and storage resources closer to mobile users. By processing data at the edge of the mobile network, MEC reduces latency and enhances the performance of mobile applications. This approach supports real-time data processing and analytics, making it ideal for applications such as augmented reality, video streaming, and IoT services.
+
+5. Multi-Access Edge Computing (MEC)
+Multi-Access Edge Computing (MEC) is an evolution of mobile edge computing that allows multiple access technologies (such as Wi-Fi, 4G, and 5G) to leverage edge computing resources. MEC enables low-latency processing and data storage at the edge, enhancing user experiences across various devices and applications. It supports a wide range of use cases, including smart cities, autonomous vehicles, and industrial IoT, by providing real-time analytics and decision-making capabilities at the network's edge.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I like to visualize edge architectures as a set of layers, which makes the concept easier to understand. Take a look at the diagram below:
+
+In the diagram above, the top layer represents cloud data centers, comprised of a central data center and interconnected regional data centers. The cloud data centers still serve a crucial role in an edge computing architecture because they’re the final repository of information. However, cloud data centers aren’t relied upon for local applications.
+
+The next layer down is the edge layer. The edge could be an oil platform, as in our earlier example, but it could just as easily be a cruise liner, airplane, restaurant, retail shop or mobile medical clinic. The edge layer contains edge data centers and Internet of Things (IoT) gateways. These run on a local area network, which could be fiber, wireless, 5G or older networks such as 4G and earlier.
+
+Within the edge layer, you see individual devices, smart phones, tablets and laptops carried by users, as well as IoT devices that all communicate with the edge data center. There is also communication between devices via a private area network such as RF or Bluetooth.
+
+While this depiction shows a single edge data center for simplicity, there could be n number of additional edge data centers to facilitate computing across a business ecosystem. For example, you might power POS systems for a chain of retail stores using edge data centers in each city where stores are concentrated.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Advantages of Edge Computing
+Reduced Latency: By processing data closer to the source, Edge Computing significantly decreases the time it takes for data to travel, resulting in faster response times for applications that require real-time processing.
+Bandwidth Efficiency: Edge Computing minimizes the amount of data that needs to be sent to centralized cloud servers, thereby conserving bandwidth and reducing costs associated with data transmission.
+Enhanced Privacy and Security: With data processed locally at the edge, sensitive information can remain closer to the user, reducing the risks associated with transmitting data over the internet and enhancing data privacy.
+
+
+Edge Over Cloud
+Real-Time Processing: Edge Computing allows for immediate data analysis and decision-making, which is crucial for applications like autonomous vehicles and industrial automation, where delays can have significant consequences.
+Scalability for IoT Devices: With the increasing number of IoT devices, Edge Computing provides a scalable solution that can handle local data processing without overwhelming central cloud resources.
+Improved Reliability: Edge Computing can continue to function even when connectivity to the central cloud is limited or disrupted, ensuring that critical applications remain operational in various environments.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Resource Management
+Efficient Allocation: Resource management in Edge Computing involves the dynamic allocation of computing resources to ensure optimal performance and responsiveness for applications, taking into account the varying demands of different workloads.
+Load Balancing: It includes techniques for load balancing across edge nodes to prevent any single node from becoming a bottleneck, thereby enhancing overall system reliability and performance.
+Scalability: Effective resource management allows for the scalable deployment of resources, enabling the system to adapt to the increasing number of connected devices and fluctuating data processing needs.
+
+2. Computation Offloading
+Task Distribution: Computation offloading involves distributing processing tasks from resource-constrained devices (like IoT sensors) to more powerful edge servers, which can handle complex computations more efficiently.
+Latency Reduction: By offloading computation tasks closer to the data source, Edge Computing reduces latency, allowing for faster data processing and improved application performance.
+Energy Efficiency: Offloading tasks to edge servers can also conserve battery life on mobile devices, as they can rely on the edge infrastructure for heavy processing instead of performing all computations locally.
+
+3. Data Management
+Local Data Processing: Data management in Edge Computing emphasizes processing data at the edge to minimize the amount of data sent to centralized cloud servers, which helps reduce bandwidth usage and latency.
+Data Caching: It includes strategies for caching frequently accessed data at the edge, allowing for quicker retrieval and reducing the need for repeated data transmission over the network.
+Data Security: Managing data at the edge enhances security by keeping sensitive information closer to the source and reducing the risks associated with data transmission to the cloud.
+
+4. Network Management
+Optimized Connectivity: Network management in Edge Computing focuses on ensuring optimized connectivity between edge devices and servers, facilitating efficient data transfer and communication.
+Quality of Service (QoS): It involves monitoring and managing network performance metrics such as latency, bandwidth, and jitter to meet the QoS requirements of various applications.
+Dynamic Resource Allocation: Network management systems can dynamically allocate bandwidth and resources based on real-time demand, ensuring that critical applications maintain performance even during peak usage.
+
+5. Security & Privacy
+Data Localization: Edge Computing enhances security by keeping sensitive data closer to the source, reducing the risk of exposure during transmission to centralized cloud servers.
+Access Control: Implementing robust access control mechanisms at the edge helps protect data and resources from unauthorized access, ensuring that only authenticated users can interact with edge devices and services.
+Real-Time Threat Detection: Edge Computing enables real-time monitoring and threat detection, allowing for quicker responses to security incidents and minimizing potential damage.
+
+6. Billing & Pricing
+Usage-Based Pricing Models: Billing in Edge Computing can adopt usage-based pricing models, allowing customers to pay only for the resources they consume, which can lead to cost savings.
+Dynamic Pricing Strategies: Pricing strategies can be dynamically adjusted based on demand, resource availability, and service level agreements (SLAs), providing flexibility for both providers and users.
+Transparent Billing Practices: Clear and transparent billing practices help build trust between service providers and customers, ensuring that users understand the costs associated with Edge Computing services.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A technology enabler is a technological advancement or innovation that facilitates the implementation and enhancement of specific applications, systems, or processes. It serves as a foundational element that allows organizations to leverage new capabilities and improve efficiency, performance, or functionality in various fields.
+Key Points:
+Facilitates Innovation: Technology enablers drive the development of new applications and services by providing the necessary tools, frameworks, or infrastructure.
+Enhances Performance: By utilizing technology enablers, systems can achieve better performance metrics, such as increased speed, reduced latency, and improved scalability, which are essential for meeting modern demands.
+Supports Scalability: Technology enablers allow for the integration of various devices and systems, ensuring that infrastructure can grow and adapt to increasing data and processing needs.
+
+1. Edge Intelligence
+Description: Edge Intelligence integrates artificial intelligence (AI) capabilities directly into edge devices and nodes, allowing for real-time data processing and decision-making at the edge of the network. This technology enhances the ability of edge devices to analyze data locally, reducing the need to send data to centralized cloud servers for processing.
+Points:
+Real-Time Analytics: Edge Intelligence enables immediate data analysis and insights, facilitating faster responses to events and improving the performance of applications that require quick decision-making.
+Resource Optimization: By processing AI models at the edge, it reduces the bandwidth required for data transmission to the cloud, optimizing network resources and enhancing overall system efficiency.
+
+2. 5G
+Description: 5G is the fifth generation of mobile network technology that provides significantly higher data rates, lower latency, and improved connectivity compared to previous generations. It supports a vast number of connected devices and enables new applications that require real-time communication and high bandwidth.
+Points:
+Low Latency: 5G technology dramatically reduces latency, making it ideal for applications like autonomous vehicles and remote surgery, where milliseconds can make a critical difference.
+Massive Device Connectivity: 5G supports a larger number of simultaneous connections, facilitating the growth of IoT devices and enabling Edge Computing to handle the increasing data generated by these devices efficiently.
+
+3. Containerization
+Description: Containerization is a lightweight virtualization technology that allows applications to run in isolated environments called containers. This approach enables developers to package applications and their dependencies together, ensuring consistent deployment across different environments, including edge nodes.
+Points:
+Portability and Scalability: Containers can be easily deployed and scaled across various edge devices, making it simpler to manage applications in diverse edge environments and respond to changing workloads.
+Efficient Resource Utilization: By sharing the host operating system and resources, containerization reduces overhead compared to traditional virtual machines, allowing for more efficient use of edge computing resources.
+These enabling technologies are crucial for the successful implementation and operation of Edge Computing, enhancing its capabilities and addressing the challenges posed by modern applications and IoT demands.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Applications of Edge Computing
+
+Smart Cities: Edge Computing enables real-time data processing and analytics for urban infrastructure, improving services like traffic management, waste management, and public safety.
+
+e-Health: In healthcare, Edge Computing supports remote patient monitoring, telemedicine, and real-time data analysis from medical devices, enhancing patient care and response times.
+
+Autonomous Vehicles: Edge Computing processes data from sensors and cameras in real-time, allowing for quick decision-making and improved safety in self-driving cars.
+
+Industrial IoT: In manufacturing, Edge Computing facilitates predictive maintenance, real-time monitoring of equipment, and automation of processes, leading to increased efficiency and reduced downtime.
+
+Military Applications: Edge Computing supports mission-critical operations by enabling real-time data processing and analytics from various sensors and devices in the field.
+
+Augmented and Virtual Reality (AR/VR): Edge Computing enhances AR and VR experiences by reducing latency and providing real-time data processing, which is essential for immersive applications.
+
+Smart Agriculture: Edge Computing enables precision farming by processing data from IoT sensors in real-time, optimizing resource usage, and improving crop yields.
+
+Content Delivery and Streaming: Edge Computing improves the delivery of content by caching data closer to users, resulting in faster load times and reduced buffering for streaming services.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Limitations and Challenges of Edge Computing
+
+Standardization: The lack of standardization in Edge Computing can lead to interoperability issues between different edge devices and platforms, making it difficult to deploy and manage edge applications across heterogeneous environments.
+
+Resource Constraints: Edge devices typically have limited computational power, storage, and energy resources compared to centralized cloud servers, which can limit the types of applications and services that can be deployed at the edge.
+
+Heterogeneity: The wide range of edge devices, operating systems, and hardware architectures can make it challenging to develop and deploy edge applications that can run seamlessly across different platforms.
+
+Orchestration and Management: Coordinating and managing resources across a large number of distributed edge nodes is a complex task that requires advanced orchestration and management techniques to ensure optimal performance and resource utilization.
+
+Energy Efficiency: Developing energy-efficient edge computing solutions is crucial to minimize the environmental impact and operating costs, but it requires careful optimization of hardware, software, and network resources.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Future of Edge Computing
+
+Increased Data Processing at the Edge: As the number of connected devices continues to rise, it is projected that a significant portion of data—up to 75%—will be processed at the edge by 2025. This shift will help alleviate congestion in core networks and improve response times for applications requiring real-time data processing.
+
+Integration with 5G and IoT: The synergy between Edge Computing and 5G technology will enhance connectivity and enable new applications that demand high bandwidth and low latency. This integration will support the growing Internet of Things (IoT) ecosystem, allowing for more efficient data handling and processing at the edge.
+
+Adoption of Edge Intelligence: The incorporation of artificial intelligence (AI) and machine learning (ML) at the edge will enable real-time decision-making and analytics. Edge Intelligence will allow devices to process data locally, reducing the need to send large volumes of data to the cloud, thereby improving efficiency and privacy.
+
+Standardization and Interoperability: The future of Edge Computing will involve efforts to establish standards and protocols that ensure interoperability among various edge devices and platforms. This will facilitate smoother integration and deployment of edge solutions across different environments.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+In conclusion, Edge Computing represents a transformative shift in how data is processed and managed, addressing the growing demands for low-latency, high-bandwidth applications in an increasingly connected world. By bringing computation closer to the end-users, Edge Computing effectively reduces network congestion and enhances the performance of critical applications across various sectors, including smart cities, healthcare, and autonomous systems.
+The integration of enabling technologies such as Edge Intelligence, 5G connectivity, and containerization further empowers Edge Computing, allowing for real-time data processing and improved resource management. As we look to the future, the continued evolution of Edge Computing will be driven by the need for standardization, enhanced security measures, and sustainable practices, ensuring that it remains a viable solution for the challenges posed by the rapid growth of IoT devices and the demands of modern applications.
+Ultimately, Edge Computing not only enhances operational efficiency but also opens up new possibilities for innovation, making it a pivotal component in the landscape of next-generation computing technologies. As we move forward, embracing the potential of Edge Computing will be essential for organizations seeking to leverage data-driven insights and maintain a competitive edge in their respective industries.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
